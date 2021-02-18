@@ -2,71 +2,71 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header { 
-    height: 60px;
-    background-color:  rgb(217, 151, 243);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+.page-1 {
+    background-image: url("/imgs/backgrounds/programar.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: auto;
 }
 
-.header img {
-    width: 75px;
-}
-
-#cachorro {
-    height: 55px;
-    border-radius: 50%;
-}
- .buttons #icon-git, #icon-linkedin, #icon-instagram{
-    width: 25px;
-    height: 25px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-#audio {
-    width: 100px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 25%;
-}
-
-.name {
-    display: flex;
+#guilherme {
+    display: block;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 0px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+.page-1 #header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+
 }
 
-.about-me {
+#bt-cursos, #bt-sobre, #bt-projetos, #bt-skils{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.sobre {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px;
-    margin-top: 20px;
+    width: 100vw;
+    height: 100vh;
 }
 
-.about-me #bersi {
-    float: right;
-    font-size: 25px;
-    margin-left: 160px;
-}
-
-.about-me img {
+.sobre img {
     float: left;
-    border-radius: 10px;
-    height: 60vh;
-    width: 60vh;
-    margin-left: 40px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 80px;
+}
+
+.sobre p {
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 40px;
 }
 
 .cursos {
     display: flex;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .cursos img {
