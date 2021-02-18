@@ -6,7 +6,7 @@ body {
 }
 
 .page-1 {
-    background-image: url("/imgs/backgrounds/programar.jpg");
+    background-image: url("/Imagens_teste-master/Imagens_teste-master/web/s1\ ft1.png");
     background-size: cover;
     height: 100vh;
     width: auto;
@@ -37,7 +37,9 @@ body {
     font-weight: bolder;
     font-size: 15px;
 }
-
+#bt-cursos:hover, #bt-sobre:hover, #bt-projetos:hover, #bt-skils:hover {
+    color: yellow;
+}
 .sobre {
     display: flex;
     align-items: center;
@@ -46,20 +48,43 @@ body {
     height: 100vh;
 }
 
+#sobre-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
 .sobre img {
+    display: block;
     float: left;
     border-radius: 50%;
     width: 300px;
     height: 300px;
     margin: 80px;
+    margin-top: 40px;
 }
 
 .sobre p {
+    display: flex;
     float: right;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
     margin-right: 40px;
+    margin-top: 40px;
+}
+
+#page-title3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding-top: 30px;
+    margin-bottom: 0px;
+
 }
 
 .cursos {
@@ -72,6 +97,7 @@ body {
 .cursos img {
     float: left;
     border-radius: 10px;
+    background-color: transparent;
 
 }
 
@@ -81,10 +107,176 @@ body {
 }
 
 #arquitetura, #html, #javascript {
-    background-color: rgb(217, 151, 243);
+    background-color: yellow;
     padding: 20px;
 }
 
 .list {
     list-style-image: url('sqpurple.gif');
+}
+
+#background {
+    background-color: white;
+}
+
+#page-4 {
+    font-weight: bolder;
+}
+
+.skilss{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/imgs/backgrounds/pg-dark.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.html {
+    width: 35vw;
+    height: 35vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.html img, p {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+}
+.html p {
+    padding-top: 5px;
+}
+
+.css {
+    width: 35vw;
+    height: 35vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.css img, p {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+}
+.css p {
+    padding-top: 5px;
+}
+
+.js {
+    width: 35vw;
+    height: 35vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.js img, p {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+}
+.js p {
+    padding-top: 5px;
+}
+
+.react {
+    width: 35vw;
+    height: 35vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.react img, p {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+}
+.react p {
+    padding-top: 5px;
+}
+
+.git {
+    width: 35vw;
+    height: 35vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.git img, p {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.git p {
+    padding-top: 5px;
+}
+
+.cmd {
+    width: 35vw;
+    height: 35vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.cmd img, p {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.cmd p {
+    padding-top: 2px;
+}
+
+.linux {
+    width: 35vw;
+    height: 35vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.linux img, p {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.linux p {
+    padding-top: 5px;
 }
