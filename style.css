@@ -1,4 +1,6 @@
 body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +11,7 @@ body {
     background-image: url("/Imagens_teste-master/Imagens_teste-master/web/s1\ ft1.png");
     background-size: cover;
     height: 100vh;
-    width: auto;
+    width: 100vw;
 }
 
 #guilherme {
@@ -36,10 +38,13 @@ body {
     color: white;
     font-weight: bolder;
     font-size: 15px;
+    transition: .5s ease;
 }
 #bt-cursos:hover, #bt-sobre:hover, #bt-projetos:hover, #bt-skils:hover {
-    color: yellow;
+    color: rgb(151, 151, 150);
+    
 }
+
 .sobre {
     display: flex;
     align-items: center;
@@ -53,8 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    margin-top: 50px;
-    margin-bottom: 5px;
+    padding-top: 50px;
 }
 
 .sobre img {
@@ -67,24 +71,27 @@ body {
     margin-top: 40px;
 }
 
-.sobre p {
+.sobre #text {
     display: flex;
-    float: right;
+    align-items: center;
     text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    margin-right: 40px;
-    margin-top: 40px;
+    justify-content: space-between;
+    margin: 20px 40px;
+    width: 100vw;
+    height: 100px;
+    font-weight: bolder;
 }
 
 #page-title3 {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    padding-top: 30px;
-    margin-bottom: 0px;
+}
 
+.page-3 {
+    width: 100vw;
+    height: 100vh;
 }
 
 .cursos {
@@ -94,10 +101,15 @@ body {
     height: 100vh;
 }
 
+.list {
+    padding-bottom: 80px;
+}
+
 .cursos img {
     float: left;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: rgb(red, green, blue);
+    padding-bottom: 100px; 
 
 }
 
@@ -107,13 +119,19 @@ body {
 }
 
 #arquitetura, #html, #javascript {
-    background-color: yellow;
+    background-color: rgb(241, 241, 241);
     padding: 20px;
 }
 
 .list {
     list-style-image: url('sqpurple.gif');
+    margin-top: 15px;
 }
+#background {
+    background-image: url(/imgs/backgrounds/site-background.jpg);
+    background-position: cover;
+}
+
 
 #background {
     background-color: white;
@@ -127,10 +145,12 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(/imgs/backgrounds/pg-dark.jpg);
     background-position: cover;
     background-repeat: no-repeat;
-    color: white;
+    color:black;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
 }
 .html {
     width: 35vw;
@@ -149,6 +169,7 @@ body {
 }
 .html p {
     padding-top: 5px;
+    color: black;
 }
 
 .css {
@@ -170,6 +191,8 @@ body {
 }
 .css p {
     padding-top: 5px;
+    color: black;
+
 }
 
 .js {
@@ -191,6 +214,8 @@ body {
 }
 .js p {
     padding-top: 5px;
+    color: black;
+
 }
 
 .react {
@@ -212,6 +237,8 @@ body {
 }
 .react p {
     padding-top: 5px;
+    color: black;
+
 }
 
 .git {
@@ -234,6 +261,8 @@ body {
 }
 .git p {
     padding-top: 5px;
+    color: black;
+
 }
 
 .cmd {
@@ -256,6 +285,8 @@ body {
 }
 .cmd p {
     padding-top: 2px;
+    color: black;
+
 }
 
 .linux {
@@ -279,4 +310,6 @@ body {
 
 .linux p {
     padding-top: 5px;
+    color: black;
+
 }
