@@ -1,17 +1,18 @@
 body {
-    width: 100vw;
+    width: auto;
     height: 100vh;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
 .page-1 {
-    background-image: url("/Imagens_teste-master/Imagens_teste-master/web/s1\ ft1.png");
+    background-image: url("/Imagens_teste-master/Imagens_teste-master/web/s1 ft1.png");
     background-size: cover;
+    background-position: center;
+    width: auto;
     height: 100vh;
-    width: 100vw;
+    
 }
 
 #guilherme {
@@ -28,19 +29,28 @@ body {
 }
 .page-1 #header {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding-left: 100px;
     padding: 30px;
-
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
-#bt-cursos, #bt-sobre, #bt-projetos, #bt-skils{
+#bt-principal, #bt-cursos, #bt-sobre, #bt-skils{
     text-decoration: none;
     color: white;
     font-weight: bolder;
     font-size: 15px;
     transition: .5s ease;
+    margin-left: 50px;
 }
-#bt-cursos:hover, #bt-sobre:hover, #bt-projetos:hover, #bt-skils:hover {
+#bt-principal {
+    margin-right: 700px;
+}
+
+
+#bt-principal:hover, #bt-cursos:hover, #bt-sobre:hover, #bt-skils:hover {
     color: rgb(151, 151, 150);
     
 }
@@ -49,8 +59,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
 }
 
 #sobre-title {
@@ -77,8 +87,8 @@ body {
     text-align: center;
     justify-content: space-between;
     margin: 20px 40px;
-    width: 100vw;
-    height: 100px;
+    width: auto;
+    height: auto;
     font-weight: bolder;
 }
 
@@ -90,15 +100,15 @@ body {
 }
 
 .page-3 {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
 }
 
 .cursos {
     display: flex;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
 }
 
 .list {
@@ -148,8 +158,8 @@ body {
     background-position: cover;
     background-repeat: no-repeat;
     color:black;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     font-weight: bolder;
 }
 .html {
