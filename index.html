@@ -12,18 +12,22 @@
   <div id="page-1">
   <div class="page-1">
     <div id="header">
-      <a id="bt-principal" href="#page-1">&lt;PRINCIPAL&gt;</a>
-      <a id="bt-sobre" href="#page-2">&lt;SOBRE&gt;</a>
-      <a id="bt-cursos" href="#page-3">&lt;CURSOS&gt;</a>
-      <a id="bt-skils" href="#page-4">&lt;SKILS&gt;</a>
+      <div class="principal">
+      <a id="principal" href="#page-1">&lt;PRINCIPAL&gt;</a>
+      </div>
+        <ul class="menu">
+          <li id="sobre"><a href="#page-2">&lt;SOBRE&gt;</a></li>
+          <li id="cursos"><a href="#page-3">&lt;CURSOS&gt;</a></li>
+          <li id="skils"><a href="#page-4">&lt;SKILS&gt;</a></li>
+        </ul>
     </div>
-    <h1 id="guilherme">GUILHERME BERSI <br> <span style="color: rgb(145, 144, 144);">FULL-STACK DEVELOPER</span><br>UNDER CONSTRUCTURING</h1>
+    <h1 id="guilherme">GUILHERME BERSI <br> <span style="color:#020405;">FULL-STACK DEVELOPER</span><br>UNDER CONSTRUCTURING</h1>
   </div>
 </div>
   <div id="background">
   <div id="page-2">
     <div id="sobre-title" >
-      <p>&lt;SOBRE&gt;</p>
+      <p>&lt;/SOBRE&gt;</p>
     </div>
     <div class="sobre">
       <img id="photo" src="/imgs/profile.jpg" alt="">
@@ -33,33 +37,34 @@
       </p>
     </div>
   </div>
-  <div id="page-3">
+ <div id="page-3">
     <div id="page-title3">
       <p>&lt;CURSOS&gt;</p>
     </div>
   <div class="cursos">
     <img src="imgs/backgrounds/study.png" alt="Ilustração">
     <ul class="list">
-        <li id="facul">Anhembi Morumbi <br>
+        <li id="l1">Anhembi Morumbi <br>
         Graduação em Análise e Desenvolvimento de Sistemas (PRIMEIRO SEMESTRE)</li>
-        <li id="arquitetura">Fundamentos de Arquiteturas e Sistema <br>
+        <li id="l2">Fundamentos de Arquiteturas e Sistema <br>
           Digital Innovation One Inc.</li>
-        <li id="linux">Linux Beginners in Cloud <br>
+        <li id="l3">Linux Beginners in Cloud <br>
           4Linux - Open Software Specialists</li>
-        <li id="html">Criação de Websites com HTML5 e CSS3 <br>
+        <li id="l4">Criação de Websites com HTML5 e CSS3 <br>
           Digital Innovation One Inc. </li>
-        <li id="rocketseat">NLW#2 e #3(Next Level Week) <br>
+        <li id="l5">NLW#2, NLW#3 e NLW#4(Next Level Week) <br>
           RocketSeat</li>
-        <li id="javascript"> JavaScript Avançado para Websites <br>
+        <li id="l6"> JavaScript Avançado para Websites <br>
           Cod3r Cursos Online.</li>
     </ul>
   </div>
 </div>
   <div id="page-4"> 
-  <div class="skilss">
     <div id="page-title4">
-      <p>&lt;SKILS&gt;</p>
-    </div>
+      <p>&lt;/SKILS&gt;</p>
+      </div>
+    <div class="skilss">
+    <div class="column1">
     <div class="html">
       <img src="/icons/html5.svg" alt="html">
       <p>HTML 5</p>
@@ -72,7 +77,13 @@
       <img src="/icons/js-file-format-symbol.svg" alt="">
       <p>JavaScript</p>
     </div>
-    <div class="react">
+    <div class="node">
+      <img src="/imgs/icons/nodejs.png" alt="">
+      <p>Node.js</p>
+    </div>
+    </div>
+    <div class="column2">
+      <div class="react">
       <img src="/icons/physics.svg" alt="React">
       <p>ReactJS</p>
     </div>
@@ -88,10 +99,30 @@
       <img src="/icons/linux.svg" alt="Linux">
       <p>Linux</p>
     </div>
-
+    </div>
   </div>
+  </div>
+  <div class="footer">
+    <ul class="menu-footer">
+      <li><a href="/imgs/icons/linkedin.png">linkedin</a></li>
+      <li><a href="/imgs/icons/github.png">Git-hub</a></li>
+      <li><a href="/imgs/icons/instagram.png">Instagram</a></li>
+    </ul>
+    <form class="formulario">
+      <div class="nome">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+      </div>
+      <div class="email">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+      </div>
+      <div class="msg">
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg" cols="30" rows="10"></textarea>
+      </div>
+    </form>
   </div>
 </div>
-<script src="/script/scroll.js"></script>
 </body>
 </html>

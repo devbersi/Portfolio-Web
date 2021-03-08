@@ -1,142 +1,353 @@
 body {
-    width: auto;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-
-.page-1 {
-    background-image: url("/Imagens_teste-master/Imagens_teste-master/web/s1 ft1.png");
-    background-size: cover;
+#page-1{
+    background-image: url("/imgs/backgrounds/—Pngtree—blue\ background_919872.jpg");
     background-position: center;
-    width: auto;
-    height: 100vh;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    margin: none;
+}
+.page-1 header {
+    width: 100%;
+    height: 5%;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 15px;
+}
+.menu {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px 15px;
+}
+.menu #sobre, #cursos, #skils {
+    padding: 0px 15px;
     
 }
+.principal a,#sobre a, #cursos a, #skils a {
+    text-decoration: none;
 
-#guilherme {
-    display: block;
+    color: #fff;
+    font-weight: bolder;
+}
+.principal a:hover,#sobre a:hover, #cursos a:hover, #skils a:hover{
+    color: rgb(12, 12, 12);
+    transition: ease-in-out 0.2s;
+}
+#page-1 h1 {
+    margin: auto;
+    margin-top: 180px;
+
+    height: 40%;
+    width: 60%;
+
+    text-align: center;
+
+    font-size: 3rem;
+    color: white;
+}
+
+
+
+/*BACKGROUND */
+#background {
+    background-image: url("/imgs/backgrounds/site-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+/*SOBRE */
+#page-2 {
+    width: 100%;
+    height: 100%;
+}
+#photo{
+    width: 300px;
+    height: 300px;
+
+    margin: auto 110px;
+    border-radius: 50%;
+}
+#text {
+    width: 50%;
+    height: 500px;
+
+    padding: 10px 15px;
+    margin: 0px;
+    margin-right: 50px;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 800;
-    margin-top: 0px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
 }
-.page-1 #header {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 100px;
-    padding: 30px;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-}
-
-#bt-principal, #bt-cursos, #bt-sobre, #bt-skils{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    font-size: 15px;
-    transition: .5s ease;
-    margin-left: 50px;
-}
-#bt-principal {
-    margin-right: 700px;
-}
-
-
-#bt-principal:hover, #bt-cursos:hover, #bt-sobre:hover, #bt-skils:hover {
-    color: rgb(151, 151, 150);
-    
-}
-
 .sobre {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
-    height: auto;
 }
-
 #sobre-title {
+    font-weight: bolder;
+    font-size: 20px;
+
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    padding-top: 50px;
 }
 
-.sobre img {
-    display: block;
-    float: left;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin: 80px;
-    margin-top: 40px;
-}
 
-.sobre #text {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    margin: 20px 40px;
-    width: auto;
-    height: auto;
-    font-weight: bolder;
+/*CURSOS */
+#page-3 {
+    width: 100%;
+    height: 100%;
 }
-
 #page-title3 {
-    display: block;
+    font-weight: bolder;
+    font-size: 20px;
+
+    padding-top: 32px;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bolder;
 }
-
-.page-3 {
-    width: auto;
-    height: auto;
-}
-
 .cursos {
     display: flex;
     align-items: center;
-    width: auto;
-    height: auto;
+    justify-content: space-around;
 }
-
-.list {
-    padding-bottom: 80px;
-}
-
 .cursos img {
-    float: left;
-    border-radius: 10px;
-    background-color: rgb(red, green, blue);
-    padding-bottom: 100px; 
+    width: 45%;
+    height: 55%;
 
 }
-
-#facul, #linux, #rocketseat {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-}
-
-#arquitetura, #html, #javascript {
-    background-color: rgb(241, 241, 241);
-    padding: 20px;
-}
-
 .list {
-    list-style-image: url('sqpurple.gif');
-    margin-top: 15px;
+    height: 30rem;
+    width: 25rem;
+
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
+#l1, #l2, #l3, #l4, #l5, #l6 {
+    margin-top: 10px;
+    height: 100px;
+
+    padding: 10px 10px;
+}
+#l1, #l3, #l5 {
+    background-color: rgb(70, 109, 236);
+}
+
+
+/*SKILS */
+#page-4{
+    width: 100%;
+    height: 100%;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+#page-title4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skilss {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.column1 {
+    margin-bottom: 50px;
+
+    width: 30%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.column2 {
+    margin-bottom: 50px;
+
+    width: 30%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.column1 .html, .css, .js, .node {
+    width: 60%;
+    height: 70%;
+
+    background-color: rgb(75, 169, 247);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 10px 0px;
+}
+.column2 .react, .git, .cmd, .linux {
+    width: 60%;
+    height: 70%;
+
+    background-color: rgb(75, 169, 247);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 10px 0px;
+}
+.html img {
+    width: 50px;
+    height: 50px;
+
+    
+    padding-top: 20px;
+}
+.css img {
+    width: 50px;
+    height: 50px;
+
+    
+    padding-top: 20px;
+}
+.js img {
+    width: 50px;
+    height: 50px;
+
+    
+    padding-top: 20px;
+}
+.node img {
+    width: 50px;
+    height: 50px;
+
+    padding-top: 20px;
+}
+.react img {
+    width: 50px;
+    height: 50px;
+
+    padding-top: 20px;
+}
+.git img {
+    width: 50px;
+    height: 50px;
+
+    
+    padding-top: 20px;
+}
+.cmd img {
+    width: 50px;
+    height: 50px;
+
+    
+    padding-top: 20px;
+}
+.linux img {
+    width: 50px;
+    height: 50px;
+
+    
+    padding-top: 20px;
+}
+
+.html p, .css p, .git p, .js p, .cmd p, .linux p, .react p, .node p {
+    font-weight: bolder;
+}
+
+
+/*FOOTER */
+.footer{
+    width: 100%;
+    height: 650px;
+
+    background-color: #555;
+}
+.menu-footer{
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+    padding: 25px;
+
+    margin: 15px;
+}
+.menu-footer a {
+    text-decoration: none;
+
+    color: #fff;
+}
+.menu-footer li {
+    padding: 10px 35px;
+    text-transform: uppercase;
+}
+.formulario {
+    background-color: aqua;
+
+    width: 30%;
+    height: 60%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.formulario .nome, .email, .msg {
+    width: 30%;
+    
+    displ
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #background {
     background-image: url(/imgs/backgrounds/site-background.jpg);
     background-position: cover;
@@ -147,179 +358,3 @@ body {
     background-color: white;
 }
 
-#page-4 {
-    font-weight: bolder;
-}
-
-.skilss{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-position: cover;
-    background-repeat: no-repeat;
-    color:black;
-    width: auto;
-    height: auto;
-    font-weight: bolder;
-}
-.html {
-    width: 35vw;
-    height: 35vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-}
-.html img, p {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    padding-top: 20px;
-}
-.html p {
-    padding-top: 5px;
-    color: black;
-}
-
-.css {
-    width: 35vw;
-    height: 35vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.css img, p {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    padding-top: 20px;
-}
-.css p {
-    padding-top: 5px;
-    color: black;
-
-}
-
-.js {
-    width: 35vw;
-    height: 35vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.js img, p {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    padding-top: 20px;
-}
-.js p {
-    padding-top: 5px;
-    color: black;
-
-}
-
-.react {
-    width: 35vw;
-    height: 35vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.react img, p {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    padding-top: 20px;
-}
-.react p {
-    padding-top: 5px;
-    color: black;
-
-}
-
-.git {
-    width: 35vw;
-    height: 35vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.git img, p {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    padding-top: 20px;
-    text-align: center;
-}
-.git p {
-    padding-top: 5px;
-    color: black;
-
-}
-
-.cmd {
-    width: 35vw;
-    height: 35vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.cmd img, p {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    padding-top: 20px;
-    text-align: center;
-}
-.cmd p {
-    padding-top: 2px;
-    color: black;
-
-}
-
-.linux {
-    width: 35vw;
-    height: 35vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.linux img, p {
-    width: 75px;
-    height: 75px;
-    margin: auto;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.linux p {
-    padding-top: 5px;
-    color: black;
-
-}
